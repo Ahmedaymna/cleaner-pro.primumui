@@ -1,0 +1,88 @@
+{
+  "expo": {
+    "name": "Cleaner Pro 🚀",
+    "slug": "cleaner-pro",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "cleaner-pro",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080C1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.cleanerpro.app",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#080C1A"
+      },
+      "package": "com.cleanerpro.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MANAGE_EXTERNAL_STORAGE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "GET_ACCOUNTS"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "usesCleartextTraffic": false
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "bundler": "metro",
+      "output": "static",
+      "preferRelatedApplications": false,
+      "metaTags": [
+        {
+          "name": "description",
+          "content": "Cleaner Pro - Professional Device Cleaner & Optimizer"
+        },
+        {
+          "name": "theme-color",
+          "content": "#080C1A"
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android_app_id": "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-file-system",
+      "expo-image-picker",
+      "expo-document-picker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cleaner-pro-2024"
+      }
+    }
+  }
+}
+
